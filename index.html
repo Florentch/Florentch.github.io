@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Florent Cheyron</title>
+    <title>Florent Cheyron - Academic Profile</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -17,56 +17,74 @@
                     },
                     colors: {
                         academic: {
-                            500: '#3b82f6',
+                            500: '#14b8a6',
+                            600: '#0d9488',
                             900: '#111827',
-                        }
+                        },
+                        cream: '#FDFBF7'
                     }
                 }
             }
         }
     </script>
+    <style>
+        html { scroll-padding-top: 5rem; }
+    </style>
 </head>
-<body class="bg-white text-gray-800 font-sans antialiased leading-relaxed">
+<body class="bg-cream text-gray-800 font-sans antialiased leading-relaxed">
 
-    <main class="max-w-3xl mx-auto px-6 py-16 sm:py-24">
+    <nav class="sticky top-0 z-50 bg-academic-600 text-white shadow-md">
+        <div class="max-w-3xl mx-auto px-6 py-3 flex overflow-x-auto space-x-6 text-sm font-medium whitespace-nowrap scrollbar-hide">
+            <a href="#about" class="hover:text-gray-200 transition-colors">About</a>
+            <a href="#publications" class="hover:text-gray-200 transition-colors">Publications</a>
+            <a href="#conferences" class="hover:text-gray-200 transition-colors">Conferences</a>
+            <a href="#education" class="hover:text-gray-200 transition-colors">Education</a>
+            <a href="#internships" class="hover:text-gray-200 transition-colors">Internships</a>
+            <a href="#teaching" class="hover:text-gray-200 transition-colors">Teaching</a>
+            <a href="#personal" class="hover:text-gray-200 transition-colors">Personal</a>
+        </div>
+    </nav>
+
+    <main class="max-w-3xl mx-auto px-6 py-12 sm:py-16">
         
         <header class="mb-12">
             <h1 class="text-4xl font-bold text-academic-900 tracking-tight mb-2">Florent Cheyron</h1>
-            <h2 class="text-xl text-gray-600 mb-6 font-medium">PhD Domain adaptation for time series</h2>
+            <h2 class="text-xl text-gray-600 mb-6 font-medium">PhD in Domain Adaptation for Time Series</h2>
             
             <div class="grid grid-cols-1 md:grid-cols-2 gap-y-2 gap-x-8 text-sm text-gray-600 mb-6">
-                <p><strong class="text-gray-900 font-semibold">Lab:</strong> Inria/IRISA Rennes France</p>
+                <p><strong class="text-gray-900 font-semibold">Lab:</strong> Inria/IRISA Rennes, France</p>
                 <p><strong class="text-gray-900 font-semibold">Team:</strong> MALT</p>
-                <p><strong class="text-gray-900 font-semibold">Advisors:</strong> Romain Tavenard</p>
-                <p><strong class="text-gray-900 font-semibold">Office:</strong> A132 </p>
+                <p><strong class="text-gray-900 font-semibold">Advisor:</strong> Romain Tavenard</p>
+                <p><strong class="text-gray-900 font-semibold">Office:</strong> A132</p>
             </div>
 
-            <div class="flex gap-4 text-sm font-medium">
-                <a href="mailto:[florent.cheyron@irisa.fr" class="text-academic-500 hover:text-blue-700 hover:underline transition-colors">Email</a>
-                <a href="https://linkedin.com/in/florent-cheyron-1958a032b/" target="_blank" rel="noopener noreferrer" class="text-academic-500 hover:text-blue-700 hover:underline transition-colors">LinkedIn</a>
-                <a href="https://github.com/Florentch" target="_blank" rel="noopener noreferrer" class="text-academic-500 hover:text-blue-700 hover:underline transition-colors">GitHub</a>
+            <div class="flex flex-wrap items-center gap-4 text-sm font-medium">
+                <span class="text-gray-800 font-semibold">florent.cheyron@irisa.fr</span>
+                <span class="text-gray-300 hidden sm:inline">|</span>
+                <a href="https://linkedin.com/in/florent-cheyron-1958a032b/" target="_blank" rel="noopener noreferrer" class="text-academic-600 hover:text-academic-900 hover:underline transition-colors">LinkedIn</a>
+                <a href="https://github.com/Florentch" target="_blank" rel="noopener noreferrer" class="text-academic-600 hover:text-academic-900 hover:underline transition-colors">GitHub</a>
             </div>
         </header>
 
-        <section class="mb-10">
+        <section id="about" class="mb-10">
             <h3 class="text-2xl font-semibold text-academic-900 border-b border-gray-200 pb-2 mb-4">About Me</h3>
             <p class="text-gray-700">
-                I am a PhD student at University Rennes. My thesis subject focuses on <strong>Domain adaptation in time series</strong>. 
+                I am a PhD student at Université de Rennes. My thesis focuses on <strong>Domain adaptation for time series</strong>. 
             </p>
         </section>
 
-        <section class="mb-10">
+        <section id="publications" class="mb-10">
             <h3 class="text-2xl font-semibold text-academic-900 border-b border-gray-200 pb-2 mb-4">Publications</h3>
             <ul class="space-y-4">
                 <li>
-                    <h4 class="font-medium text-gray-900">Anthropometric Prior for Human Mesh Recovery -APHMR</h4>
+                    <h4 class="font-medium text-gray-900">Anthropometric Prior for Human Mesh Recovery (APHMR)</h4>
                     <p class="text-sm text-gray-600"><strong>Florent Cheyron</strong>, Corentin Hardy, Benoît Augier, Charles Pontonnier, Pierre Hellier</p>
-                    <p class="text-sm text-gray-500 italic">Société de Biomécanique, 2026 &middot; <a href="#" class="text-academic-500 hover:underline not-italic">PDF</a></p>
+                    <p class="text-sm text-gray-500 italic">Société de Biomécanique, 2026 &middot; <a href="#" class="text-academic-600 hover:underline not-italic">PDF</a></p>
                 </li>
             </ul>
         </section>
 
-        <section class="mb-10">
+        <section id="conferences" class="mb-10">
             <h3 class="text-2xl font-semibold text-academic-900 border-b border-gray-200 pb-2 mb-4">Conferences & Talks</h3>
             <ul class="space-y-3">
                 <li>
@@ -75,24 +93,24 @@
                 </li>
                 <li>
                     <h4 class="font-medium text-gray-900">[Another Talk Title]</h4>
-                    <p class="text-sm text-gray-600">Société de Biomécanique Montpellier, France &mdash; Oct, 2026</p>
+                    <p class="text-sm text-gray-600">Société de Biomécanique, Montpellier, France &mdash; Oct, 2026</p>
                 </li>
             </ul>
         </section>
 
-        <section class="mb-10">
+        <section id="education" class="mb-10">
             <h3 class="text-2xl font-semibold text-academic-900 border-b border-gray-200 pb-2 mb-4">Education</h3>
             <div class="space-y-4">
                 <div class="flex flex-col sm:flex-row sm:justify-between sm:items-baseline">
                     <div>
-                        <h4 class="font-medium text-gray-900">Ph.D. </h4>
-                        <p class="text-sm text-gray-600">Université Rennes</p>
+                        <h4 class="font-medium text-gray-900">Ph.D.</h4>
+                        <p class="text-sm text-gray-600">Université de Rennes</p>
                     </div>
                     <span class="text-sm text-gray-500 mt-1 sm:mt-0">2026 &ndash; Present</span>
                 </div>
                 <div class="flex flex-col sm:flex-row sm:justify-between sm:items-baseline">
                     <div>
-                        <h4 class="font-medium text-gray-900">Master in Applied Mathematics -Statistics for AI</h4>
+                        <h4 class="font-medium text-gray-900">Master in Applied Mathematics - Statistics for AI</h4>
                         <p class="text-sm text-gray-600">Université Rennes 2</p>
                     </div>
                     <span class="text-sm text-gray-500 mt-1 sm:mt-0">2024 &ndash; 2026</span>
@@ -114,56 +132,58 @@
             </div>
         </section>
 
-        <section class="mb-10">
+        <section id="internships" class="mb-10">
             <h3 class="text-2xl font-semibold text-academic-900 border-b border-gray-200 pb-2 mb-4">Internships</h3>
-            <div class="space-y-4">
-                <div class="flex flex-col sm:flex-row sm:justify-between sm:items-baseline">
-                    <div>
-                        <h4 class="font-medium text-gray-900">Research Intern</h4>
-                        <p class="text-sm text-gray-600">Inria/IRISA Team ComBO, Rennes</p>
+            <div class="space-y-6">
+                <div>
+                    <div class="flex flex-col sm:flex-row sm:justify-between sm:items-baseline">
+                        <div>
+                            <h4 class="font-medium text-gray-900">Research Intern</h4>
+                            <p class="text-sm text-gray-600">Inria/IRISA Team ComBO, Rennes</p>
+                        </div>
+                        <span class="text-sm text-gray-500 mt-1 sm:mt-0">Jan 2026 &ndash; Jul 2026</span>
                     </div>
-                    <span class="text-sm text-gray-500 mt-1 sm:mt-0">January 2026 &ndash; July 2026</span>
+                    <p class="text-sm text-gray-700 mt-1">Focused on Human Pose Estimation (HPE) for athletes in kitefoil.</p>
                 </div>
-                <p class="text-sm text-gray-700 mt-1">Focused on HPE for athletes in kitefoil.</p>
-            </div>
-            <div class="space-y-4">
-                <div class="flex flex-col sm:flex-row sm:justify-between sm:items-baseline">
-                    <div>
-                        <h4 class="font-medium text-gray-900">Research Intern</h4>
-                        <p class="text-sm text-gray-600">Inria/IRISA Team MALT, Rennes</p>
+                <div>
+                    <div class="flex flex-col sm:flex-row sm:justify-between sm:items-baseline">
+                        <div>
+                            <h4 class="font-medium text-gray-900">Research Intern</h4>
+                            <p class="text-sm text-gray-600">Inria/IRISA Team MALT, Rennes</p>
+                        </div>
+                        <span class="text-sm text-gray-500 mt-1 sm:mt-0">Jun 2025 &ndash; Aug 2025</span>
                     </div>
-                    <span class="text-sm text-gray-500 mt-1 sm:mt-0">June 2025 &ndash; August 2025</span>
+                    <p class="text-sm text-gray-700 mt-1">Focused on anomaly detection in temporal graphs.</p>
                 </div>
-                <p class="text-sm text-gray-700 mt-1">Focused on Anomaly detection in temporal graphs.</p>
-            </div>
-            <div class="space-y-4">
-                <div class="flex flex-col sm:flex-row sm:justify-between sm:items-baseline">
-                    <div>
-                        <h4 class="font-medium text-gray-900">FFVB Internship</h4>
-                        <p class="text-sm text-gray-600">FFVB, France Team Avenir, Rennes</p>
+                <div>
+                    <div class="flex flex-col sm:flex-row sm:justify-between sm:items-baseline">
+                        <div>
+                            <h4 class="font-medium text-gray-900">Software Developer Intern</h4>
+                            <p class="text-sm text-gray-600">FFVB, France Team Avenir, Rennes</p>
+                        </div>
+                        <span class="text-sm text-gray-500 mt-1 sm:mt-0">May 2025</span>
                     </div>
-                    <span class="text-sm text-gray-500 mt-1 sm:mt-0">May 2025 &ndash; May 2025</span>
+                    <p class="text-sm text-gray-700 mt-1">Design and implementation of a web application for French volleyball players.</p>
                 </div>
-                <p class="text-sm text-gray-700 mt-1">Desing and implementation of a web application for French Volleyball player.</p>
             </div>
         </section>
 
-        <section class="mb-10">
+        <section id="teaching" class="mb-10">
             <h3 class="text-2xl font-semibold text-academic-900 border-b border-gray-200 pb-2 mb-4">Teaching</h3>
             <ul class="space-y-3">
-                <li>
-                    Coming ... 
+                <li class="text-gray-700 italic">
+                    Coming soon...
                 </li>
             </ul>
         </section>
 
-        <section class="mb-10">
-            <h3 class="text-2xl font-semibold text-academic-900 border-b border-gray-200 pb-2 mb-4">Personal</h3>
-            <p class="text-gray-700">
-                - Volley Ball / Competitive playing and teaching to young (From 11 to 15)
-                - Chess 
-                - Reinforcement Learning 
-            </p>
+        <section id="personal" class="mb-10">
+            <h3 class="text-2xl font-semibold text-academic-900 border-b border-gray-200 pb-2 mb-4">Personal Interests</h3>
+            <ul class="list-disc list-inside text-gray-700 space-y-2">
+                <li><strong>Volleyball:</strong> Competitive playing and coaching youth teams (ages 11-15)</li>
+                <li><strong>Chess</strong></li>
+                <li><strong>Reinforcement Learning</strong></li>
+            </ul>
         </section>
 
     </main>
